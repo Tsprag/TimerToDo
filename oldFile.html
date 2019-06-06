@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class='background'>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To Do Tracker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+</head>
+
+<body class="displayGrid">
+    <div class="taskGrid">
+        <button class="button">Create Task</button>
+        <div class='task task0'>
+            <div class='taskName0'></div>
+            <progress id='task0'></progress>
+        </div>
+        <div class='task task1'>
+            <div class='taskName1'></div>
+            <div id='task1'></div>
+        </div>
+        <div class='task task2'>
+            <div class='taskName2'></div>
+            <div id='task2'></div>
+        </div>
+        <div class='task task3'>
+            <div class='taskName3'></div>
+            <div id='task3'></div>
+        </div>
+        <div class='task task4'>
+            <div class='taskName0'></div>
+            <div id='task4'></div>
+        </div>
+    </div>
+    <div class="timerGrid">
+        <button class="buttonTimer">Timer</button>
+        <div class='currentTask'></div>
+    </div>
+    <div id="createTaskModal" class="modal">
+        <div class="modalContent">
+            <form class="submit">
+                Task:<br>
+                <input type="text" id="taskName"><br> Time: <br> Hours: <input type="text" id='hours'> Minutes: <input type="text" id="minutes"><br>
+                <input type='submit' value="Create Task">
+                <button class='exitModal'>Exit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
